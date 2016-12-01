@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fsW-nW-O3t">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Login Signup View Controller-->
+        <scene sceneID="vTC-PL-aWW">
+            <objects>
+                <viewController id="oX7-8j-O9c" customClass="LoginSignup_ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="68z-zC-AgI"/>
+                        <viewControllerLayoutGuide type="bottom" id="GXQ-mb-LOU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xSX-tq-XNc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3m-Wc-mPd">
+                                <rect key="frame" x="170" y="332" width="259" height="65"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="OKB-e4-8cs"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="button_logintransparent">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickLogin:" destination="oX7-8j-O9c" eventType="touchUpInside" id="bwT-f5-z5B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign in with MealPlan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dr-3U-9p3">
+                                <rect key="frame" x="219" y="354" width="162" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cQf-Ir-r0z">
+                                <rect key="frame" x="150" y="43" width="300" height="225"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XV7-tz-QtC">
+                                <rect key="frame" x="171" y="407" width="259" height="58"/>
+                                <animations/>
+                                <state key="normal" image="button_facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPT-Gx-IlO">
+                                <rect key="frame" x="225" y="425" width="170" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="making meals happen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJY-z7-3MR">
+                                <rect key="frame" x="227" y="289" width="146" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="4SY-8I-SPV"/>
+                                    <constraint firstAttribute="height" constant="21" id="yIM-OR-sdz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u8-sg-rap">
+                                <rect key="frame" x="171" y="475" width="259" height="58"/>
+                                <animations/>
+                                <state key="normal" image="button_google">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with Google+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h17-Bx-tgF">
+                                <rect key="frame" x="230" y="493" width="160" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.29273745890000002" alpha="0.89000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3dr-3U-9p3" firstAttribute="centerX" secondItem="kJY-z7-3MR" secondAttribute="centerX" id="5sk-pe-6r9"/>
+                            <constraint firstItem="kJY-z7-3MR" firstAttribute="centerX" secondItem="cQf-Ir-r0z" secondAttribute="centerX" id="FqW-O2-CjV"/>
+                            <constraint firstItem="M3m-Wc-mPd" firstAttribute="top" secondItem="kJY-z7-3MR" secondAttribute="bottom" constant="22" id="Opt-At-QWq"/>
+                            <constraint firstItem="cQf-Ir-r0z" firstAttribute="top" secondItem="xSX-tq-XNc" secondAttribute="top" constant="43" id="Oqc-9N-TTg"/>
+                            <constraint firstItem="M3m-Wc-mPd" firstAttribute="centerY" secondItem="3dr-3U-9p3" secondAttribute="centerY" id="WQZ-Qc-4Cf"/>
+                            <constraint firstItem="M3m-Wc-mPd" firstAttribute="centerX" secondItem="3dr-3U-9p3" secondAttribute="centerX" id="ZwN-wd-Pc6"/>
+                            <constraint firstItem="3dr-3U-9p3" firstAttribute="top" secondItem="kJY-z7-3MR" secondAttribute="bottom" constant="44" id="bXg-dp-Sf4"/>
+                            <constraint firstItem="kJY-z7-3MR" firstAttribute="centerX" secondItem="xSX-tq-XNc" secondAttribute="centerX" id="h3K-Wq-dCM"/>
+                            <constraint firstItem="kJY-z7-3MR" firstAttribute="top" secondItem="cQf-Ir-r0z" secondAttribute="bottom" constant="21" id="pen-P9-pc8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XV7-tz-QtC"/>
+                                <exclude reference="SPT-Gx-IlO"/>
+                                <exclude reference="1u8-sg-rap"/>
+                                <exclude reference="h17-Bx-tgF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="bFp-pd-Nsg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="WEu-Fy-IVN" kind="show" identifier="oLoginSegue" id="ADS-RM-1lc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkz-Nl-xtm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="123"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="M4U-Xb-Nar">
+            <objects>
+                <viewController id="9Ij-Ai-qik" customClass="Signup_ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mbw-7P-R9x"/>
+                        <viewControllerLayoutGuide type="bottom" id="UPE-Qg-dr2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4mu-zd-A9W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.29273745890000002" alpha="0.89000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="klB-WN-Lkp" kind="unwind" identifier="oBackSegue" unwindAction="unwindToLoginSignup:" id="cgH-JY-ms6"/>
+                        <segue destination="klB-WN-Lkp" kind="unwind" identifier="oSignupLoginSegue" unwindAction="unwindToLogin:" id="B35-AZ-HO1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ra-K5-fLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="klB-WN-Lkp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="123"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="I19-TO-cWL">
+            <objects>
+                <viewController id="WEu-Fy-IVN" customClass="Login_ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="02d-iL-rH5"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ZS-eW-XdW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w9G-Sl-MqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.29273745890000002" alpha="0.89000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="Gf3-vO-oG9" kind="unwind" identifier="oBackSegue" unwindAction="unwindToLoginSignup:" id="opG-ih-0ot"/>
+                        <segue destination="9Ij-Ai-qik" kind="show" identifier="oLoginSignupSegue" id="9YS-bV-J3w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avc-6F-sFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gf3-vO-oG9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="123"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pVw-0z-eQG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fsW-nW-O3t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QgG-aS-fK2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oX7-8j-O9c" kind="relationship" relationship="rootViewController" id="OUm-hR-jnp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wya-Fo-cTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_facebook" width="258" height="50"/>
+        <image name="button_google" width="258" height="50"/>
+        <image name="button_logintransparent" width="258" height="58"/>
+        <image name="logo" width="300" height="225"/>
+    </resources>
+</document>

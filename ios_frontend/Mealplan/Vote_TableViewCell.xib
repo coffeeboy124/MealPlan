@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" showsReorderControl="YES" indentationWidth="10" rowHeight="100" id="21t-c4-rbB" customClass="Vote_TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="21t-c4-rbB" id="sWA-qW-DLM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOn-7A-pvB">
+                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="US6-mp-W7y">
+                                <rect key="frame" x="160" y="0.0" width="160" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ybq-DZ-atE"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button_voteforrestaurant2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1av-JJ-Lgw">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D5f-PW-mhV"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="button_viewonyelp">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="US6-mp-W7y" firstAttribute="leading" secondItem="1av-JJ-Lgw" secondAttribute="trailing" id="2x8-Sh-gZo"/>
+                            <constraint firstItem="US6-mp-W7y" firstAttribute="leading" secondItem="1av-JJ-Lgw" secondAttribute="trailing" id="5jc-21-R6u"/>
+                            <constraint firstAttribute="bottom" secondItem="1av-JJ-Lgw" secondAttribute="bottom" id="9yD-wh-jxL"/>
+                            <constraint firstItem="1av-JJ-Lgw" firstAttribute="leading" secondItem="lOn-7A-pvB" secondAttribute="leading" id="HUD-K6-BJd"/>
+                            <constraint firstAttribute="bottom" secondItem="US6-mp-W7y" secondAttribute="bottom" id="Hei-1V-Ch9"/>
+                            <constraint firstAttribute="trailing" secondItem="US6-mp-W7y" secondAttribute="trailing" id="c5P-EM-DKq"/>
+                            <constraint firstItem="US6-mp-W7y" firstAttribute="top" secondItem="lOn-7A-pvB" secondAttribute="top" id="ihy-oZ-N7C"/>
+                            <constraint firstItem="1av-JJ-Lgw" firstAttribute="top" secondItem="lOn-7A-pvB" secondAttribute="top" id="tDU-4G-TZ8"/>
+                            <constraint firstItem="1av-JJ-Lgw" firstAttribute="width" secondItem="US6-mp-W7y" secondAttribute="width" id="zvE-lb-3Vt"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-Xf-yNe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tablecell" translatesAutoresizingMaskIntoConstraints="NO" id="eFy-Wr-6MY">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="52"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEO-mz-knR">
+                                <rect key="frame" x="8" y="27" width="312" height="15"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="p9s-BB-Jib"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                <color key="textColor" red="0.29042376889999999" green="0.29042376889999999" blue="0.29042376889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dD-DS-waI">
+                                <rect key="frame" x="264" y="13" width="48" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="JDT-dR-R3W"/>
+                                    <constraint firstAttribute="width" constant="48" id="XUF-HO-Y5j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.29042376889999999" green="0.29042376889999999" blue="0.29042376889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Restaurant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDV-Hy-NHi">
+                                <rect key="frame" x="8" y="8" width="312" height="17"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.29042376889999999" green="0.29042376889999999" blue="0.29042376889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nDV-Hy-NHi" secondAttribute="trailing" id="3rA-q3-3Uy"/>
+                            <constraint firstItem="eFy-Wr-6MY" firstAttribute="leading" secondItem="YQt-Xf-yNe" secondAttribute="leading" id="Gsg-SK-hO6"/>
+                            <constraint firstItem="7dD-DS-waI" firstAttribute="trailing" secondItem="YQt-Xf-yNe" secondAttribute="trailingMargin" id="HWU-MX-LX9"/>
+                            <constraint firstItem="dEO-mz-knR" firstAttribute="bottom" secondItem="YQt-Xf-yNe" secondAttribute="bottomMargin" id="Lr9-j0-Ho9"/>
+                            <constraint firstItem="dEO-mz-knR" firstAttribute="top" secondItem="nDV-Hy-NHi" secondAttribute="bottom" constant="2" id="XGV-7b-hoZ"/>
+                            <constraint firstItem="nDV-Hy-NHi" firstAttribute="leading" secondItem="YQt-Xf-yNe" secondAttribute="leadingMargin" id="YEg-SG-ZQp"/>
+                            <constraint firstItem="eFy-Wr-6MY" firstAttribute="centerY" secondItem="YQt-Xf-yNe" secondAttribute="centerY" id="jEP-yS-Zyi"/>
+                            <constraint firstItem="7dD-DS-waI" firstAttribute="top" secondItem="YQt-Xf-yNe" secondAttribute="top" constant="13" id="k6s-or-PlB"/>
+                            <constraint firstItem="nDV-Hy-NHi" firstAttribute="leading" secondItem="dEO-mz-knR" secondAttribute="leading" id="u1x-9h-fW2"/>
+                            <constraint firstItem="nDV-Hy-NHi" firstAttribute="trailing" secondItem="dEO-mz-knR" secondAttribute="trailing" id="y67-ae-OAD"/>
+                            <constraint firstItem="eFy-Wr-6MY" firstAttribute="trailing" secondItem="dEO-mz-knR" secondAttribute="trailing" id="z9s-f2-2IM"/>
+                            <constraint firstItem="nDV-Hy-NHi" firstAttribute="top" secondItem="YQt-Xf-yNe" secondAttribute="topMargin" id="zNF-Ux-ENI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="lOn-7A-pvB" firstAttribute="trailing" secondItem="YQt-Xf-yNe" secondAttribute="trailing" id="3nF-3v-0si"/>
+                    <constraint firstItem="YQt-Xf-yNe" firstAttribute="leading" secondItem="sWA-qW-DLM" secondAttribute="leading" id="DgY-rM-dCe"/>
+                    <constraint firstItem="lOn-7A-pvB" firstAttribute="leading" secondItem="YQt-Xf-yNe" secondAttribute="leading" id="KLs-15-scA"/>
+                    <constraint firstItem="YQt-Xf-yNe" firstAttribute="top" secondItem="sWA-qW-DLM" secondAttribute="top" id="ORa-vo-tYB"/>
+                    <constraint firstItem="lOn-7A-pvB" firstAttribute="top" secondItem="YQt-Xf-yNe" secondAttribute="bottom" id="di1-nb-kNs"/>
+                    <constraint firstAttribute="trailing" secondItem="YQt-Xf-yNe" secondAttribute="trailing" id="qmE-R3-UUX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="m_oNameLabel" destination="nDV-Hy-NHi" id="EP3-ic-OGy"/>
+                <outlet property="m_oSuggestedByLabel" destination="dEO-mz-knR" id="Fpq-Fb-bVr"/>
+                <outlet property="m_oVoteButton" destination="US6-mp-W7y" id="mB3-h9-GNS"/>
+                <outlet property="m_oVotesLabel" destination="7dD-DS-waI" id="nn0-he-3dQ"/>
+                <outlet property="m_oYelpButton" destination="1av-JJ-Lgw" id="Fet-Gc-5Al"/>
+            </connections>
+            <point key="canvasLocation" x="-58" y="330"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button_viewonyelp" width="183" height="51"/>
+        <image name="button_voteforrestaurant2" width="178" height="51"/>
+        <image name="tablecell" width="359" height="52"/>
+    </resources>
+</document>

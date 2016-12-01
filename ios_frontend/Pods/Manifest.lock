@@ -1,0 +1,24 @@
+PODS:
+  - ActionSheetPicker-3.0 (1.5.1)
+  - JSONModel (1.1.0)
+  - JSQMessagesViewController (7.2.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - JSONModel
+  - JSQMessagesViewController
+  - SDWebImage
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: de0f71e30495ed0192f7d16d0fddcab6882a0ca3
+  JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
+  JSQMessagesViewController: 73cab48aa92fc2d512f3b6724f3425cc47a19eb5
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+
+COCOAPODS: 0.39.0

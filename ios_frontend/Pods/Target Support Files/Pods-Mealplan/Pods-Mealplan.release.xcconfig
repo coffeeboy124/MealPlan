@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0" "${PODS_ROOT}/Headers/Public/JSONModel" "${PODS_ROOT}/Headers/Public/JSQMessagesViewController" "${PODS_ROOT}/Headers/Public/JSQSystemSoundPlayer" "${PODS_ROOT}/Headers/Public/SDWebImage"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ActionSheetPicker-3.0" -isystem "${PODS_ROOT}/Headers/Public/JSONModel" -isystem "${PODS_ROOT}/Headers/Public/JSQMessagesViewController" -isystem "${PODS_ROOT}/Headers/Public/JSQSystemSoundPlayer" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ActionSheetPicker-3.0" -l"JSONModel" -l"JSQMessagesViewController" -l"JSQSystemSoundPlayer" -l"SDWebImage" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "ImageIO" -framework "MapKit" -framework "QuartzCore" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}/Pods

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pOn-Hr-Dxp" customClass="Yelp_TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pOn-Hr-Dxp" id="S2Y-r9-ArX">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxb-wH-WB5">
+                        <rect key="frame" x="97" y="8" width="454" height="18"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.29042376889999999" green="0.29042376889999999" blue="0.29042376889999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGk-HK-Vkz">
+                        <rect key="frame" x="97" y="24" width="503" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.29042376889999999" green="0.29042376889999999" blue="0.29042376889999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="0stars" translatesAutoresizingMaskIntoConstraints="NO" id="xiD-2j-F2u">
+                        <rect key="frame" x="97" y="42" width="83" height="17"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="tOa-YF-4zd"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yelplogo" translatesAutoresizingMaskIntoConstraints="NO" id="zfH-d1-h5S">
+                        <rect key="frame" x="559" y="72" width="40" height="19"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="UC8-gD-HAT"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uel-M2-CvQ">
+                        <rect key="frame" x="559" y="4" width="41" height="41"/>
+                        <animations/>
+                        <state key="normal" image="icon_add">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="number of reviews on yelp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vg-Tg-AqI">
+                        <rect key="frame" x="97" y="60" width="524" height="12"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="jQs-7c-hWh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.29042376889999999" green="0.29042376889999999" blue="0.29042376889999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ED8-xL-wcg">
+                        <rect key="frame" x="8" y="8" width="83" height="83"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="z0k-vI-X5c"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="4Vg-Tg-AqI" secondAttribute="trailing" constant="-29" id="4Z7-IC-5fh"/>
+                    <constraint firstItem="Kxb-wH-WB5" firstAttribute="top" secondItem="ED8-xL-wcg" secondAttribute="top" id="8nV-iE-YTL"/>
+                    <constraint firstItem="4Vg-Tg-AqI" firstAttribute="top" secondItem="LGk-HK-Vkz" secondAttribute="bottom" constant="15" id="BXb-E9-8Je"/>
+                    <constraint firstItem="Uel-M2-CvQ" firstAttribute="leading" secondItem="Kxb-wH-WB5" secondAttribute="trailing" constant="8" symbolic="YES" id="Bfl-n1-UaK"/>
+                    <constraint firstItem="xiD-2j-F2u" firstAttribute="leading" secondItem="LGk-HK-Vkz" secondAttribute="leading" id="Bqd-Ej-nCo"/>
+                    <constraint firstItem="Kxb-wH-WB5" firstAttribute="leading" secondItem="ED8-xL-wcg" secondAttribute="trailing" constant="6" id="C1R-7b-MOD"/>
+                    <constraint firstItem="LGk-HK-Vkz" firstAttribute="bottom" secondItem="Uel-M2-CvQ" secondAttribute="bottom" id="C7F-mH-cp0"/>
+                    <constraint firstItem="ED8-xL-wcg" firstAttribute="bottom" secondItem="S2Y-r9-ArX" secondAttribute="bottomMargin" id="Dzm-tB-rjA"/>
+                    <constraint firstItem="Uel-M2-CvQ" firstAttribute="centerX" secondItem="zfH-d1-h5S" secondAttribute="centerX" id="H7s-pC-bEy"/>
+                    <constraint firstItem="ED8-xL-wcg" firstAttribute="leading" secondItem="S2Y-r9-ArX" secondAttribute="leadingMargin" id="HTa-JV-YgM"/>
+                    <constraint firstItem="4Vg-Tg-AqI" firstAttribute="leading" secondItem="xiD-2j-F2u" secondAttribute="leading" id="JNj-x6-Rql"/>
+                    <constraint firstItem="LGk-HK-Vkz" firstAttribute="top" secondItem="S2Y-r9-ArX" secondAttribute="topMargin" constant="16" id="QNx-8l-0de"/>
+                    <constraint firstItem="LGk-HK-Vkz" firstAttribute="trailing" secondItem="Uel-M2-CvQ" secondAttribute="trailing" id="Qgr-ED-y8S"/>
+                    <constraint firstItem="4Vg-Tg-AqI" firstAttribute="top" secondItem="xiD-2j-F2u" secondAttribute="bottom" constant="1" id="TNw-fm-pyk"/>
+                    <constraint firstAttribute="trailing" secondItem="Uel-M2-CvQ" secondAttribute="trailing" id="cAe-eF-fi4"/>
+                    <constraint firstItem="zfH-d1-h5S" firstAttribute="top" secondItem="4Vg-Tg-AqI" secondAttribute="bottom" id="dmg-5E-krx"/>
+                    <constraint firstItem="Kxb-wH-WB5" firstAttribute="leading" secondItem="LGk-HK-Vkz" secondAttribute="leading" id="htI-PI-tZ2"/>
+                    <constraint firstItem="Uel-M2-CvQ" firstAttribute="top" secondItem="S2Y-r9-ArX" secondAttribute="topMargin" constant="-4" id="iCC-lG-Xfd"/>
+                    <constraint firstItem="xiD-2j-F2u" firstAttribute="top" secondItem="Kxb-wH-WB5" secondAttribute="bottom" constant="16" id="ko4-U0-9eo"/>
+                    <constraint firstItem="Uel-M2-CvQ" firstAttribute="leading" secondItem="zfH-d1-h5S" secondAttribute="leading" id="vRi-d2-Uda"/>
+                    <constraint firstItem="zfH-d1-h5S" firstAttribute="bottom" secondItem="ED8-xL-wcg" secondAttribute="bottom" id="waA-Es-nlz"/>
+                    <constraint firstItem="Kxb-wH-WB5" firstAttribute="top" secondItem="S2Y-r9-ArX" secondAttribute="topMargin" id="y6b-8L-D2C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="m_oAddressLabel" destination="LGk-HK-Vkz" id="uqy-Y8-Ekb"/>
+                <outlet property="m_oCheckButton" destination="Uel-M2-CvQ" id="GJx-Kj-R46"/>
+                <outlet property="m_oNameLabel" destination="Kxb-wH-WB5" id="ClT-je-GWK"/>
+                <outlet property="m_oProfileImage" destination="ED8-xL-wcg" id="8kF-nV-vmo"/>
+                <outlet property="m_oRatingImage" destination="xiD-2j-F2u" id="tDL-6p-l6n"/>
+                <outlet property="m_oReviewsLabel" destination="4Vg-Tg-AqI" id="psc-cF-XHU"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="323"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="0stars" width="86" height="17"/>
+        <image name="icon_add" width="21" height="20"/>
+        <image name="yelplogo" width="34" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vki-Ch-pPX">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="1250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timesheetimage" translatesAutoresizingMaskIntoConstraints="NO" id="8LF-ul-klv">
+                    <rect key="frame" x="0.0" y="0.0" width="360" height="1250"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="8LF-ul-klv" secondAttribute="centerX" constant="-2.5" id="HiK-UF-e6n"/>
+                <constraint firstAttribute="trailing" secondItem="8LF-ul-klv" secondAttribute="trailing" constant="-5" id="PZo-nG-1dU"/>
+                <constraint firstItem="8LF-ul-klv" firstAttribute="leading" secondItem="vki-Ch-pPX" secondAttribute="leading" id="TFH-9T-Acv"/>
+                <constraint firstAttribute="bottom" secondItem="8LF-ul-klv" secondAttribute="bottom" id="wKp-iP-pow"/>
+                <constraint firstItem="8LF-ul-klv" firstAttribute="top" secondItem="vki-Ch-pPX" secondAttribute="top" id="wq7-qw-Fhi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="244" y="584"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="timesheetimage" width="360" height="1233"/>
+    </resources>
+</document>

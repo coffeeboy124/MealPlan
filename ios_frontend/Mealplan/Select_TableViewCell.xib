@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KxU-tI-V5z" customClass="Select_TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KxU-tI-V5z" id="W7Y-XH-yqQ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_userimage" translatesAutoresizingMaskIntoConstraints="NO" id="y0M-DT-dsq">
+                        <rect key="frame" x="0.0" y="1" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="0g6-fC-BrU"/>
+                            <constraint firstAttribute="height" constant="48" id="cPF-cv-cNQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="level 1: palate explorer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0b-lC-M96">
+                        <rect key="frame" x="56" y="28" width="117" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.29042376889999999" green="0.29042376889999999" blue="0.29042376889999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOu-ny-Vb1">
+                        <rect key="frame" x="56" y="8" width="41" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.29042376889999999" green="0.29042376889999999" blue="0.29042376889999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq1-8m-QdH">
+                        <rect key="frame" x="283" y="11" width="29" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="8HW-G8-xSh"/>
+                            <constraint firstAttribute="height" constant="29" id="UKF-9T-gh9"/>
+                        </constraints>
+                        <state key="normal" image="checkbox2">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lq1-8m-QdH" firstAttribute="trailing" secondItem="W7Y-XH-yqQ" secondAttribute="trailingMargin" id="0Cp-N9-N8f"/>
+                    <constraint firstItem="Lq1-8m-QdH" firstAttribute="top" secondItem="W7Y-XH-yqQ" secondAttribute="topMargin" constant="3" id="DpO-1K-BQw"/>
+                    <constraint firstItem="X0b-lC-M96" firstAttribute="leading" secondItem="hOu-ny-Vb1" secondAttribute="leading" id="FuX-q3-4oF"/>
+                    <constraint firstItem="y0M-DT-dsq" firstAttribute="bottom" secondItem="X0b-lC-M96" secondAttribute="bottom" id="Jfz-qZ-5m8"/>
+                    <constraint firstItem="hOu-ny-Vb1" firstAttribute="top" secondItem="W7Y-XH-yqQ" secondAttribute="topMargin" id="Q3Z-OR-whb"/>
+                    <constraint firstItem="y0M-DT-dsq" firstAttribute="leading" secondItem="W7Y-XH-yqQ" secondAttribute="leading" id="TqI-Gk-bmY"/>
+                    <constraint firstItem="y0M-DT-dsq" firstAttribute="top" secondItem="W7Y-XH-yqQ" secondAttribute="topMargin" constant="-7" id="Vdb-k9-q8V"/>
+                    <constraint firstItem="hOu-ny-Vb1" firstAttribute="leading" secondItem="y0M-DT-dsq" secondAttribute="trailing" constant="8" symbolic="YES" id="cm3-QL-AUz"/>
+                    <constraint firstItem="X0b-lC-M96" firstAttribute="top" secondItem="W7Y-XH-yqQ" secondAttribute="topMargin" constant="20" id="kJ2-6T-6gS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hOu-ny-Vb1" secondAttribute="bottom" constant="12.5" id="xbM-m9-bm6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="m_oCheckButton" destination="Lq1-8m-QdH" id="Acj-mQ-Aib"/>
+                <outlet property="m_oProfileImage" destination="y0M-DT-dsq" id="umV-SY-q1y"/>
+                <outlet property="m_oSublabel" destination="X0b-lC-M96" id="3IH-q1-U1y"/>
+                <outlet property="m_oUserNameLabel" destination="hOu-ny-Vb1" id="twD-Li-1cz"/>
+            </connections>
+            <point key="canvasLocation" x="465" y="378"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox2" width="29" height="29"/>
+        <image name="icon_userimage" width="42" height="42"/>
+    </resources>
+</document>

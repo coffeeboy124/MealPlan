@@ -1,7 +1,0 @@
-1. Install easyPHP @ www.easyphp.org
-2. Go to http://127.0.0.1/home/ and open MySQL Administration
-3. Create a database. Call it mealtime. If you call it something else change the database name in global.php (located in utility folder). Change line 4 to $sDSN = "mysql:host=127.0.0.1;dbname=asdf";
-4. Fill the database with tables. Just copy and paste the commands from mealplan_db_scheme.xlsx
-5. Open up signup.php in publicweb. Refresh the page once. Test out the server
-
-Daniel Mao
